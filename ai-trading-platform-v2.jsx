@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 
 // ---- CONFIG ----
 // เปลี่ยนเป็น Railway URL หลัง deploy เช่น https://ai-trading.railway.app
-const API_BASE = "ai-trading-backend.railway.internal";
+const API_BASE = "https://ai-trading-backend.railway.app";
 const FINNHUB_KEY = "d8lqbfhr01qnkjl867mgd8lqbfhr01qnkjl867n0";
 
 // ---- STOCK UNIVERSE ----
