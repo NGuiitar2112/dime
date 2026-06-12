@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 const FINNHUB_KEY = process.env.FINNHUB_KEY || "d8lqbfhr01qnkjl867mgd8lqbfhr01qnkjl867n0";
-const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const anthropic = new Anthropic({ apiKey: process.env.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 });
 
 // Cache
 const priceCache = {};
