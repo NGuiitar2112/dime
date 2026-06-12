@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const Anthropic = require("@anthropic-ai/sdk");
+const Anthropic = require("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");
 
 const app = express();
 app.use(cors());
