@@ -6,7 +6,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 const API_BASE = "dime-production-eea8.up.railway.app";
 // ====================================================
 
-const FINNHUB_KEY = "d8lqbfhr01qnkjl867mgd8lqbfhr01qnkjl867n0";
+const FINNHUB_KEY = "d8mbjc1r01qkiso7q2u0d8mbjc1r01qkiso7q2ug";
 
 const STOCKS = [
   { symbol: "RKLB", name: "Rocket Lab", sector: "Space" },
