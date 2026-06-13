@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 
 // ---- ENV ----
-const FINNHUB_KEY = process.env.FINNHUB_KEY || "d8lqbfhr01qnkjl867mgd8lqbfhr01qnkjl867n0";
+const FINNHUB_KEY = process.env.FINNHUB_KEY || "d8mbjc1r01qkiso7q2u0d8mbjc1r01qkiso7q2ug";
 const OPENROUTER_KEY = process.env.OPENROUTER_KEY || "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";
 const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN || "";
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || "";
