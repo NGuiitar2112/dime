@@ -7,7 +7,7 @@ app.use(express.json());
 
 // ---- ENV ----
 const FINNHUB_KEY = process.env.FINNHUB_KEY || "d8lqbfhr01qnkjl867mgd8lqbfhr01qnkjl867n0";
-const OPENROUTER_KEY = process.env.GROQ_KEY || "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";
+const GROQ_KEY = process.env.GROQ_KEY || "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";
 const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN || "";
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || "";
 
@@ -27,7 +27,7 @@ async function callGemini(prompt) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": `Bearer ${GROQ_KEY}`,
+      "Authorization": `Bearer ${process.env.GROQ_KEY}`,
     },
     body: JSON.stringify({
       model: "llama-3.3-70b-versatile",
