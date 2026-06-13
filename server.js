@@ -213,14 +213,14 @@ async function runAutoScan() {
     scanCache = result;
     scanTime = Date.now();
     const time = new Date().toLocaleTimeString("th-TH", { timeZone: "Asia/Bangkok" });
-    await sendTelegram(`🤖 <b>AI Market Scan</b> — ${time}\n\n${result}\n\n<i>สแกนอัตโนมัติทุก 5 นาที • Powered by Gemini</i>`);
+    await sendTelegram(`🤖 <b>AI Market Scan</b> — ${time}\n\n${result}\n\n<i>สแกนอัตโนมัติทุก 60 นาที • Powered by Gemini</i>`);
     await checkAlerts();
   } catch (e) {
     console.error("Auto scan error:", e.message);
   }
 }
 
-setInterval(runAutoScan, 5 * 60 * 1000);
+setInterval(runAutoScan, 1 * 60 * 60 * 1000);
 setInterval(checkAlerts, 60 * 1000);
 
 // ---- ROUTES ----
