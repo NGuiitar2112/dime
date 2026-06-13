@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // ---- ENV ----
-const FINNHUB_KEY = process.env.FINNHUB_KEY || "d8lqbfhr01qnkjl867mgd8lqbfhr01qnkjl867n0";
+const FINNHUB_KEY = process.env.FINNHUB_KEY || "d8mbjc1r01qkiso7q2u0d8mbjc1r01qkiso7q2ug";
 const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN || "";
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || "";
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
